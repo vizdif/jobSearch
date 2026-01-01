@@ -2,13 +2,8 @@ const puppeteer = require('puppeteer');
 const fs = require('fs');
 const path = require('path');
 
-// original
-// const URL = 'https://builtin.com/companies/type/healthtech-companies/size/51-200/201-500/501-1000/1000?country=USA';
-// const OUTPUT_PATH = 'builtinCompanies.csv';
-
-// all tech
-const URL = 'https://builtin.com/companies/type/adtech-companies/biotech-companies/edtech-companies/fintech-companies/greentech-companies/healthtech-companies/hr-tech-companies/information-technology-companies/legal-tech-companies/marketing-tech-companies/size/1-10/11-50/51-200/201-500/501-1000/1000?country=USA';
-const OUTPUT_PATH = 'techCompanies.csv';
+const URL = 'https://builtin.com/companies/type/healthtech-companies/size/51-200/201-500/501-1000/1000?country=USA';
+const OUTPUT_PATH = 'builtinCompanies.csv';
 
 (async () => {
     const browser = await puppeteer.launch({ headless: true });
